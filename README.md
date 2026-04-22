@@ -26,7 +26,7 @@ PassVault is an open-source mobile application designed to securely store and ma
 
 | Home                                       | Vault                               |
 |--------------------------------------------|-------------------------------------|
-| ![](./screenshots/PassVault Dashboard.png) | ![](./screenshots/vault_screen.png) |
+| ![](screenshots/dashboard.png) | ![](./screenshots/vault_screen.png) |
 ## 🚀 Getting Started
 
 ### Prerequisites
