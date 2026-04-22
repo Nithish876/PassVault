@@ -38,8 +38,8 @@ PassVault is an open-source mobile application designed to securely store and ma
 ### Installation
 
 ```bash
-git clone https://github.com/yourusername/passvault.git
-cd passvault
+git clone https://github.com/Nithish876/PassVault.git
+cd PassVault
 npm install
 npm start
 ```
