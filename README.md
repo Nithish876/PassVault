@@ -1,50 +1,85 @@
-# Welcome to your Expo app 👋
+# PassVault
 
-This is an [Expo](https://expo.dev) project created with [`create-expo-app`](https://www.npmjs.com/package/create-expo-app).
+PassVault is an open-source mobile application designed to securely store and manage your passwords in one place. Built with privacy and simplicity in mind, PassVault helps users protect sensitive credentials with strong encryption, biometric authentication, and seamless device syncing.
 
-## Get started
+## ✨ Features
 
-1. Install dependencies
+* 🔐 **AES-256 Encryption**
+  All passwords are encrypted using industry-standard AES-256 encryption before being stored.
 
-   ```bash
-   npm install
-   ```
+* 👆 **Biometric Lock**
+  Unlock your vault quickly and securely using fingerprint or face authentication (supported devices only).
 
-2. Start the app
+* ☁️ **Sync Across Devices**
+  Access your passwords securely across multiple devices with sync support.
 
-   ```bash
-   npx expo start
-   ```
+* 📱 **Mobile First Experience**
+  Clean, fast, and intuitive mobile interface for everyday use.
 
-In the output, you'll find options to open the app in a
+* 🛡️ **Privacy Focused**
+  Your sensitive data stays protected and encrypted.
 
-- [development build](https://docs.expo.dev/develop/development-builds/introduction/)
-- [Android emulator](https://docs.expo.dev/workflow/android-studio-emulator/)
-- [iOS simulator](https://docs.expo.dev/workflow/ios-simulator/)
-- [Expo Go](https://expo.dev/go), a limited sandbox for trying out app development with Expo
+* ⚡ **Open Source**
+  Transparent and community-driven development.
 
-You can start developing by editing the files inside the **app** directory. This project uses [file-based routing](https://docs.expo.dev/router/introduction).
+## 📸 Screenshots
 
-## Get a fresh project
+| Home                                       | Vault                               |
+|--------------------------------------------|-------------------------------------|
+| ![](./screenshots/PassVault Dashboard.png) | ![](./screenshots/vault_screen.png) |
+## 🚀 Getting Started
 
-When you're ready, run:
+### Prerequisites
+
+* Node.js
+* Expo CLI or React Native CLI
+* Git
+
+### Installation
 
 ```bash
-npm run reset-project
+git clone https://github.com/yourusername/passvault.git
+cd passvault
+npm install
+npm start
 ```
 
-This command will move the starter code to the **app-example** directory and create a blank **app** directory where you can start developing.
+## 🔒 Security
 
-## Learn more
+PassVault uses:
 
-To learn more about developing your project with Expo, look at the following resources:
+* AES-256 encryption for stored passwords
+* Secure local storage
+* Optional biometric authentication
+* Strong privacy-first architecture
 
-- [Expo documentation](https://docs.expo.dev/): Learn fundamentals, or go into advanced topics with our [guides](https://docs.expo.dev/guides).
-- [Learn Expo tutorial](https://docs.expo.dev/tutorial/introduction/): Follow a step-by-step tutorial where you'll create a project that runs on Android, iOS, and the web.
+> Important: Always use a strong master password.
 
-## Join the community
+## 🛠️ Built With
 
-Join our community of developers creating universal apps.
+* React Native / Expo
+* TypeScript
+* Secure storage libraries
+* Cloud sync backend
 
-- [Expo on GitHub](https://github.com/expo/expo): View our open source platform and contribute.
-- [Discord community](https://chat.expo.dev): Chat with Expo users and ask questions.
+## 🤝 Contributing
+
+Contributions are welcome!
+
+1. Fork the repository
+2. Create your feature branch
+3. Commit changes
+4. Push branch
+5. Open a pull request
+
+## 📄 License
+
+This project is licensed under the MIT License.
+
+## 🌍 Why PassVault?
+
+Most password managers are closed-source or overly complex. PassVault aims to provide a simple, transparent, and secure alternative for everyone.
+
+## ⭐ Support
+
+If you like this project, consider giving it a star on GitHub.
