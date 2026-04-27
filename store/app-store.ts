@@ -1,13 +1,23 @@
-import {create} from 'zustand'
-import {persist,createJSONStorage} from 'zustand/middleware'
-import Asyncstorage from "@react-native-async-storage/async-storage"
+import Asyncstorage from "@react-native-async-storage/async-storage";
+import { create } from 'zustand';
+import { createJSONStorage, persist } from 'zustand/middleware';
 
+export interface loginWithEmail{
+    email:string;
+    password:string;
+}
+export interface signupWithEmailPassowrd{
+    email:string;
+    password:string;
+    fullName:string;
+}
 type AppState = {
     hasSeenOnboarding:boolean;
     setSeenOnboarding:()=>void;
 
     isAuthenticated:boolean;
-    login:()=>void;
+    signWithEmailPassword:(params:signupWithEmailPassowrd)=>void;
+    loginWithEmail:(params:loginWithEmail)=>void;
     logout:()=>void;
 }
 
@@ -15,10 +25,11 @@ type AppState = {
 export const useAppStore = create<AppState>()(persist(
     (set)=>({
         hasSeenOnboarding: false,
-        setSeenOnboarding : ()=>set({hasSeenOnboarding: false}),
+        setSeenOnboarding : ()=>set({hasSeenOnboarding: true}),
 
         isAuthenticated:false,
-        login:()=>set({isAuthenticated: true}),
+        signWithEmailPassword:(params)=>set({isAuthenticated:true}),
+        loginWithEmail:(params)=>set({isAuthenticated: true}),
         logout:()=>set({isAuthenticated: false}),
     }),
     {

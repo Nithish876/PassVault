@@ -1,9 +1,9 @@
-import {Text} from "react-native";
+import AuthScreen from "@/screens/AuthScreen"
 
-const AuthScreen = ()=>{
+const AuthPage = ()=>{
     return(
-        <Text>Auth Page...</Text>
+        <AuthScreen />
     )
 }
 
-export default AuthScreen;
+export default AuthPage;
