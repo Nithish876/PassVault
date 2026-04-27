@@ -33,6 +33,5 @@ const styles= StyleSheet.create({
         color:'white',
         fontSize:size.lg,
         textAlign:'center',
-        fontFamily:'PoppinsRegular'
     }
 })
